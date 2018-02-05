@@ -1,0 +1,150 @@
+body {
+  background-image: url("Lemyportrait.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 200px 1px  ;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.blueprint {
+  display: flex;
+  flex-direction: row;
+}
+
+p.textmove {
+  margin: 0;
+  line-height: 2;
+}
+a {
+  display: flex;
+  height: 30px;
+}
+img {
+  display: block;
+  height: 100;
+  margin: 0;
+}
+
+div.col1, div.col2, div.col3 {
+  display: flex;
+  padding: 20px;
+  max-width: 27%;
+
+  flex-direction: column;
+  width: 100%;
+}
+
+div.col3 {
+  word-break: normal;
+}
+
+div.col1 > *, div.col2 > *, div.col3 > * {
+  flex-wrap: wrap;
+  border-top: 4px solid Black;
+}
+
+#titlesm {
+  font-family:'Archivo', sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  margin:0;
+}
+
+div.experiencepro {
+  margin-top: 12px;
+}
+
+div.hobbies{
+  margin-top: 15px;
+}
+
+div.langages {
+  margin-top: 15px;
+}
+div.profil {
+  margin-top: 10px;
+}
+
+p.titres, h1.titres{
+  font-family: Archivo Black;
+  font-size: 100%;
+  text-align: left;
+  margin: 0;
+  word-wrap: break-word;
+  font-weight: normal;
+}
+p.text {
+  font-family:'EB Garamond', serif;
+  font-size: 100%;
+  margin: 0;
+}
+p.newtitre {
+  margin: 0;
+ font-family: 'Anton', sans-serif;
+ font-size: 20px;
+}
+
+p.explication {
+  margin: 0;
+}
+
+.checked {
+    color: orange;
+}
+
+li.text {
+  font-family:'EB Garamond', serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+p.textin {
+  font-family:'EB Garamond', serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+#job{
+  font-style: italic;
+}
+
+/* competences */
+
+.competences > ul {
+  font-family:'EB Garamond', serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.competences > ul > li {
+  padding: 3px 0px;
+}
+
+.competences > ul > li h2,
+.competences > ul > li p {
+  font-family:'EB Garamond', serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+.competences > ul .comp-title * {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+   div.blueprint {
+       background-color: #ffdfcc;
+       flex-direction: column;
+   }
+
+   div.blueprint > * {
+     max-width: 100%;
+   }
+}
